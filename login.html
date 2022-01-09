@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<style type="text/css">
+			#footer {
+				text-align: center;
+				vertical-align: middle;
+				height: 150px;
+				padding-top: 50px;
+				color: gray;
+				background-color: #fff;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<img src="./images/banner.jpeg" class="fitBg" />
+
+			<form action="#" class="login-form">
+				<h2>用户登录</h2>
+				<input type="text" placeholder="请输入用户名" id="name" />
+				<input type="password" placeholder="请输密码" id="pass" />
+				<input type="submit" value="登录" class="submitButton" onclick="return login();" />
+			</form>
+			<div id="right-sidebar">
+				<br /><br /><br /><br />
+				<div class="setup-info-module">
+					<h2>欢迎来到登录页面</h2>
+					<ul class="features-list">
+						<li><strong>表达</strong>&nbsp;离开家乡的眷念</li>
+						<li><strong>展现</strong>&nbsp;你努力的成果&nbsp;&nbsp;&nbsp;</li>
+						<li><strong>追逐</strong>&nbsp;梦想的痕迹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+						<br /><br />
+
+						<li>Great communication</li>
+						<li>Frictionless development</li>
+						<li>Open source community</li>
+						<li><img src="images/彼岸花.png" width="100px" height="150px">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="images/zhuyi.jpg" width="200px" height="250px" />
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function login() {
+				var name = document.getElementById("name").value;
+				var pass = document.getElementById("pass").value;
+				if (name == "2004200113" && pass == "2004200113") {
+					alert("登入成功");
+					window.location.href = "index.html";
+					return false;
+				} else {
+					alert("用户名或密码错误");
+					window.location.href = "login.html";
+					return false;
+				}
+			}
+		</script>
+		<div id="footer">
+			<p>2004200113@lizebin.com</p>
+			<p>l.zebin@foxmail.com</p>
+						<p>抄袭必究</p>
+		   <p><a href="liuyanban.html">留言板<p>
+		</div>
+	</body>
+</html>
