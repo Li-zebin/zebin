@@ -1,0 +1,58 @@
+
+article {
+	width: 1300px;
+	background: #eefcff;
+	position: relative;
+	margin: 10px auto 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 1px 1px lightgray inset;
+}
+
+/**
+ * 副标题
+ */
+div.synopsis {
+	border: 10px solid transparent;
+	font-size: 15px;
+	background-color:#d9d8ee ;
+}
+
+h3 {
+	border-left: #4F9CEE 20px solid;
+	border-bottom: #4F9CEE 2px solid;
+	padding-left: 1%;
+	float: left;
+	width: 15%;
+	font-size: 25px;
+}
+h2{
+	font-size: 20px;
+	height: 15%;
+	text-align: center;
+	text-shadow: 5px 5px 6px rgba(0,0,0, .3);
+	border-left: #d8eee1 20px solid;
+	border-bottom: #d8eee3 2px solid;
+	padding-left: 1%;
+	float: left;
+}
+
+/*全局 p 标签 首行缩进 2em */
+p {
+	text-indent: 2em;
+}
+img{
+	width: 160px;
+	height: 160px;
+	float: left;
+}
+.table {
+	padding-left:124px,
+	border="0.9"
+}
+.tc p{
+	font-style: italic;
+	font-weight: bold;
+	font-weight: lighter;
+}

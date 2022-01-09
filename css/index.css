@@ -1,0 +1,501 @@
+/* 版心大小1300px */
+
+/* .w {
+	margin: 0 auto;
+	width: 1300px;
+} */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial
+}
+
+ul,
+ol {
+	list-style: outside none none;
+}
+
+.none {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+导航栏部分
+*/
+#header {
+	width: 100%;
+	min-width: 1263px;
+	height: 70px;
+	background-color: #333;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 9999;
+}
+
+#header .box-top {
+	width: 1263px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#header .logo {
+	width: 240px;
+	height: 70px;
+	background-image: url(../images/logo.jpg);
+	text-indent: -9999px;
+	float: left;
+}
+
+#header .lin {
+	width: 650px;
+	float: right;
+	height: 70px;
+	line-height: 70px;
+	color: dimgray;
+}
+
+#header .lin li {
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+
+#header .lin a {
+	color: dimgray;
+	display: block;
+}
+
+#header .lin a:hover,
+#header .active a {
+	background-color: black;
+}
+
+/* 下拉菜单 */
+#header .lin div {
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+
+.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* li a:hover, .dropdown:hover, .dropbtn {
+    background-color: #111;
+} */
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+	display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 70px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+	background-color: #6db31c;
+}
+
+/* 主体内容———第一部分图片 */
+.char-top {
+	width: 1349px;
+	height: 300px;
+}
+
+.char-top a img {
+	width: 1349px;
+	height: 300px;
+}
+
+/* 主体内容———第一部分框内内容 */
+.main {
+	/* CSS3 弹性盒子 */
+	display: -webkit-flex;
+	display: flex;
+	width: 1349px;
+	height: 100px;
+	background-color: #666666;
+}
+
+.main-top {
+	width: 700px;
+	height: 100px;
+	font-size: 20px;
+	font-weight: 800px;
+	/* 文字阴影 */
+	text-shadow: 5px 5px 6px rgba(0, 0, 0, .3);
+}
+
+.main-name {
+	font-size: 15px;
+	text-shadow: 5px 5px 6px rgba(0, 0, 0, .3);
+}
+
+/* 汕尾信息 */
+/* 介绍 */
+.introduce {
+	height: 40px;
+	width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 24px;
+	padding-top: 8px;
+	border-bottom-width: 2px;
+	border-left-width: 10px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #F00;
+	border-left-color: #9F3;
+}
+.introduce-content {
+	height: 500px;
+	width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F0EBDB;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+#img-introduce {
+	background-color: #CC0;
+	float: left;
+	height: 480px;
+	width: 620px;
+	margin: 10px;
+}
+#img-introduce img{
+	width: 620px;
+	height: 480px;
+}
+#text-introduce {
+	background-color: #F0EBDB;
+	margin: 10px;
+	height: 480px;
+	width: 440px;
+	float: left;
+}.text-introducce {
+	height: 100px;
+	width: 440px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.scroll {
+	height: 380px;
+	width: 1000px;
+	margin-right: auto;
+	background-color: #FFF;
+	position: relative;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+.ms-ex {
+	padding: 10px;
+	height: 440px;
+	width: 1100px;
+	border: 1px solid #999;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.text-box {
+	height: 40px;
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px;
+	
+}
+
+/*历史沿革*/
+
+.card {
+    height: 460px;
+    width: 1100px;
+    margin-bottom: 50px;
+    border: 2px solid #00F;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card img{
+	width: 600px;
+	height: 440px;
+}
+
+.card-img-left {
+    width: 600px;
+    height: 450px;
+    float: left;
+    overflow: auto;
+}
+.card-text {
+    width: 460px;
+    margin: 0 20px;
+    height: 450px;
+    float: right;
+    position: relative;
+}
+.card .card-text h3 {
+    font-family: "微软雅黑";
+    font-size: 30px;
+    text-align: center;
+}
+
+element.style {
+}
+.card .card-text p {
+    font-family: "微软雅黑";
+    line-height: 30px;
+    margin-top: 30px;
+	font-size: 15.2px;
+	text-indent: 2em;
+}
+
+
+/* 行政区划模块 */
+.box-xinzheng {
+	padding: 0 300px 79px;
+	text-align: center;
+	background-color: #F9F9F9;
+}
+
+.box-xinzheng img {
+	float: left;
+	margin: 0 4px 4px 0;
+}
+
+.text-introducce {
+	font-size: 15.2px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-weight: lighter;
+}
+
+h2 {
+	font-size: 30px;
+	height: 50px;
+	text-align: center;
+	text-shadow: 5px 5px 6px rgba(0, 0, 0, .3);
+}
+
+img {
+	width: 450px;
+	height: 400px;
+	float: left;
+	margin: 0 4px 4px 0;
+}
+
+.box-lishi-2 {
+	font-size: 20px;
+	text-indent: 2em;
+}
+
+/* 风景名胜 */
+.box-fengjing {
+	padding: 0 300px 79px;
+	text-align: center;
+	background-color: #F9F9F9;
+}
+
+.box-fengjing img {
+	height: 200px;
+	width: 400px;
+	float: right;
+	margin: 0 4px 4px 0;
+}
+
+.box-fengjing1 {
+	font-size: 20px;
+	text-indent: 2em;
+}
+
+/* 主体内容———图片部分 */
+.content {
+	height: 300px;
+	width: 530px;
+	margin: 0 auto;
+	transform: rotate(-45deg);
+	margin-left: 330px;
+	margin-top: -76px;
+}
+
+/* 图片 */
+#chart img {
+	width: 70px;
+}
+
+#chart {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 0 1px 2px 0;
+	transition: 1s;
+}
+
+#chart:hover {
+	transform: scale(1.2);
+}
+
+
+/* 视频 */
+.zpc {
+    padding: 10px;
+    height: 700px;
+    width: 1100px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#zpc-content {
+	height: 650px;
+	width: auto;
+	padding-top: 0px;
+}
+
+.video-text img {
+	width: 670px;
+	height: 130px;
+}
+
+#zpc-text-line {
+	font-family: "微软雅黑";
+	font-size: 36px;
+	height: 40px;
+	width: auto;
+	border-left-width: 7px;
+	border-left-style: solid;
+	border-left-color: #6F3;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F00;
+	padding-bottom: 0px;
+}
+
+#ex-top {
+	margin-top: 0px;
+}
+
+.step-text {
+	height: 90px;
+	width: 200px;
+	margin-top: 10px;
+	text-align: left;
+	vertical-align: middle;
+	padding-top: 15px;
+	line-height: 24px;
+	padding-bottom: 15px;
+}
+
+.step-text p {
+	margin: 10px;
+}
+
+.step-img1 {
+	margin-top: 10px;
+}
+
+.step-img {
+	height: 120px;
+	width: 160px;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+#zpc-content-00 {
+	float: left;
+	height: 650px;
+	width: 670px;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+.video {
+	height: 378px;
+}
+
+.video-text {
+	height: 130px;
+}
+
+#zpc-content-step {
+	height: 650px;
+	width: 420px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	padding: 0px;
+}
+
+#step-text {
+	margin: 0px;
+	height: 650px;
+	width: 220px;
+	float: right;
+}
+
+.video-text {
+	width: 670px;
+	height: 130px;
+}
+
+.step-img1 img {
+	width: 180px;
+	height: 120px;
+}
+
+#step-img {
+	height: 650px;
+	width: 180px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: right;
+}

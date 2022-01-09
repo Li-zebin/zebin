@@ -1,0 +1,76 @@
+.center1 {
+	width: 100%;
+	position: relative;
+	height: 281px;
+}
+
+.center1 a img {
+	margin: 0 auto;
+	margin-right: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -950px;
+	display: block;
+}
+.gansuzhengwen{
+	margin-top: 40px;
+	margin-left: 220px;
+}
+
+.sanlanwenzi{
+	width: 1000px;
+	height: 300px;
+	margin-top:150px;
+	margin-left: 180px;
+}
+.wangzhe{
+	margin-left: 220px;
+}
+.wangzhe td{
+	width: 332px;
+}
+
+#zuihou{
+	margin-left: 180px;
+	margin-top: 40px;
+}
+/*页码*/
+.yemian {
+	width: 825px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.yemian ul {
+	overflow: hidden;
+	margin-left: 150px;
+}
+
+.yemian ul li {
+	float: left;
+	border: #9a9a9a 1px solid;
+	font-size: 12px;
+	padding: 10px 10px;
+	;
+	margin-left: 10px;
+	border-radius: 3px;
+}
+
+.yemian ul li:hover {
+	background-color: #7743ff;
+	color: #FFF;
+}
+
+
+/*底部banner*/
+.foot-box {
+	height: 310px;
+	background-color: #292e35;
+	margin-top:40px;
+}
+
+.foot {
+	width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+}

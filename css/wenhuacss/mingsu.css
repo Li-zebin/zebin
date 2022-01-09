@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* 设置字体 */
+	font-family: "microsoft yahei";
+}
+
+body {
+	background-color: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial
+}
+
+ul,
+ol {
+	list-style: outside none none;
+}
+
+.none {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+导航栏部分
+*/
+#header {
+	width: 100%;
+	min-width: 1263px;
+	height: 70px;
+	background-color: #333;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 9999;
+}
+
+#header .box-top {
+	width: 1263px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#header .logo {
+	width: 240px;
+	height: 70px;
+	background-image: url(../../images/logo.jpg);
+	text-indent: -9999px;
+	float: left;
+}
+
+#header .lin {
+	width: 650px;
+	float: right;
+	height: 70px;
+	line-height: 70px;
+	color: dimgray;
+}
+
+#header .lin li {
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+
+#header .lin a {
+	color: dimgray;
+	display: block;
+}
+
+#header .lin a:hover,
+#header .active a {
+	background-color: black;
+}
+
+/* 下拉菜单 */
+#header .lin div {
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+
+.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* li a:hover, .dropdown:hover, .dropbtn {
+    background-color: #111;
+} */
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+	display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 70px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+	background-color: #6db31c;
+}
+
+/* 内容 */
+/**
+ * 主文章框
+ */
+
+article {
+	width: 1119px;
+	background: #eefcff;
+	position: relative;
+	margin: 10px auto 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 0px 1px 1px lightgray inset;
+}
+
+/**
+ * 副标题
+ */
+div.synopsis {
+	border: 10px solid transparent;
+	font-size: 15px;
+}
+
+h3 {
+	border-left: #4F9CEE 20px solid;
+	border-bottom: #4F9CEE 2px solid;
+	padding-left: 1%;
+	float: left;
+	width: 15%;
+	font-size: 25px;
+}
+
+/* 框内内容 */
+img {
+	width: 170px;
+	float: left;
+}
+
+.actorList {
+	list-style: none;
+}
+
+.actorList>li {
+	padding: 4em 2em;
+	border-bottom: 0.5px dashed gray;
+
+}
+
+/*全局 p 标签 首行缩进 2em */
+p {
+	text-indent: 2em;
+}
+
+.actorList dd {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*文化介绍 -> 民俗名字*/
+.minshu_name {
+	font-size: 1.2em;
+}
+
+.minshu_name+dd {
+	color: gray;
+	font-size: 0.9em;
+}
+
+.minshu_name~dd {
+	font-weight: lighter;
+}
